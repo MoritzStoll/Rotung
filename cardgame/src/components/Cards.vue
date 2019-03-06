@@ -72,7 +72,7 @@ export default {
         var rect = element.$el.getBoundingClientRect()
         var middle = window.screen.height/2
         if(rect.top <= middle) {
-          console.log("Karte: ",element.cardType)
+          //console.log("Karte: ",element.cardType)
           this.$root.$children[0].$children[4].currentType = element.cardType
           //element.$el.style.backgroundColor = 'red'
         }
@@ -87,7 +87,7 @@ export default {
 <!-- styling for the component -->
 <style>
 div#cards {
-  font-family: 'Garamond', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;

@@ -41,7 +41,7 @@ body {
 }
 
 #app {
-  font-family: 'Garamond', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

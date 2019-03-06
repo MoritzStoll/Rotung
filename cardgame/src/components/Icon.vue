@@ -1,8 +1,8 @@
 <template>
   <div id="icon">
     <div id="image">
-      <!--<img :src="getSource(currentType)">-->
-      <h1>{{ getSource(currentType) }}</h1>
+      <img :src="getSource(currentType)">
+      <!--<h1>{{ getSource(currentType) }}</h1>-->
     </div>
   </div>
 </template>
@@ -18,7 +18,8 @@ export default {
     },
     methods: {
       getSource(type) {
-        return this.sources[this.currentType]
+        console.log('../static/'+this.sources[this.currentType] + '.png')
+        return '../static/'+this.sources[this.currentType] + '.png'
       }
     }   
 
@@ -49,7 +50,13 @@ h3, .text {
   padding: 0 20px;
 }
 
+#image {
+  height: 2em;
+}
  
+#image img {
+  height: 100%;
+}
 
 
 

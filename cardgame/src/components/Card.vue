@@ -28,9 +28,10 @@ export default {
       prepareImages: function() {
         
         var pureImage = this.$refs.pureImage;
+        console.log(this.$refs.pureImage)
         
-        var horizontal = pureImage.width > pureImage.height;
-        console.log("Horizontal: ", horizontal)
+        var horizontal = pureImage.clientWidth > pureImage.clientHeight;
+        console.log("Horizontal: ", horizontal, "width: ", pureImage.clientWidth, "height: ", pureImage.clientHeight, this.$el)
         if(horizontal) {
           pureImage.classList.add("horizontal")
           pureImage.classList.remove("vertical")
