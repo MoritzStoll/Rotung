@@ -24,6 +24,7 @@ export default {
         {title: "Ausspiel-Phase", list: ["Kreaturen, Zauber, Segen oder Flüche können ausgespielt werden"]},
         {title: "Kampf-Phase", list: ["Enttappen der AP", "Ansagen machen", "Schaden verrechnen"]},
         {title: "Aktionspunkte", list: ["1.	Wird mit einer Karte angegriffen muss der Spieler Aktionspunkte in Höhe des ANG-Werts tappen."]}
+        
       ]
     }
   }
@@ -31,19 +32,23 @@ export default {
 </script>
 <!-- styling for the component -->
 <style>
-#about {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+#manual {
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  width: 100%;
+  list-style: none;
+  overflow-y: scroll;
+  position: relative;
+  align-items: center;
 }
 #textWrapper {
   padding: 0 5em;
 }
 p {
-  
   text-align: justify;
 }
 </style>

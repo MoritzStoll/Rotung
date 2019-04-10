@@ -7,7 +7,6 @@
         <div class="textWrapper disappearing" ref=textWrapper>
           <div id="allDescription" ref=allDescription>
             <h3 id="title">{{ name }}</h3>
-            
             <p id="description" class="text">{{ text }}</p>
           </div>
         </div>
@@ -28,14 +27,14 @@ export default {
       prepareImages: function() {
         
         var pureImage = this.$refs.pureImage;
-        console.log(this.$refs.pureImage)
+        //console.log(this.$refs.pureImage)
         
         var horizontal = pureImage.clientWidth > pureImage.clientHeight;
-        console.log("Horizontal: ", horizontal, "width: ", pureImage.clientWidth, "height: ", pureImage.clientHeight, this.$el)
+        //console.log("Horizontal: ", horizontal, "width: ", pureImage.clientWidth, "height: ", pureImage.clientHeight, this.$el)
         if(horizontal) {
+          console.log(pureImage)
           pureImage.classList.add("horizontal")
           pureImage.classList.remove("vertical")
-
         } else {
           pureImage.classList.remove("horizontal")
           pureImage.classList.add("vertical")
@@ -66,10 +65,7 @@ export default {
     },
     mounted(){
       this.prepareImages()
-    }
-    
-
-   
+    } 
 }
 
 
@@ -145,6 +141,10 @@ h3, .text {
 @media screen and (max-width: 800px) {
   h3, .text {
     padding: 0;
+  }
+
+  .text {
+    font-size: 1em;
   }
   #card {
     width: 100vw;

@@ -3,13 +3,13 @@
     <div id="header">
       <h1>Tribes of Rotund</h1>
       <div id="linkContainer">
-        <router-link class="link" v-bind:to="'/'">Home</router-link>
-        <router-link class="link" v-bind:to="'/about'">About</router-link>
-        <router-link class="link" v-bind:to="'/cards'">Cards</router-link>
-        <router-link class="link" v-bind:to="'/manual'">Anleitung</router-link>
-        
-        <Icon></Icon>
+        <router-link class="link" v-bind:to="'/'">Start</router-link>
+        <!--<router-link class="link" v-bind:to="'/about'">About</router-link>-->
+        <router-link class="link" v-bind:to="'/cards'">Karten</router-link>
+        <!--<router-link class="link" v-bind:to="'/manual'">Anleitung</router-link>-->
       </div>
+      <Icon></Icon>
+
     </div>
     <!-- the router outlet, where all matched components would ber viewed -->
     
@@ -57,15 +57,14 @@ body {
 }
 #header {
   width: 20%;
-  height: 40em;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 
 }
 h1 {
-  font-family: 'Montserrat';
   font-size: 2em;
 }
 
@@ -73,6 +72,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1em;
 }
 
 .link {
@@ -89,8 +90,11 @@ h1 {
   }
   #header {
     width: 100%;
-    height: 10em;
-    
+    height: 13em;   
+  }
+  #linkContainer {
+    width: 100%;
+    flex-direction: row;
   }
   .view {
     width: 100%;
